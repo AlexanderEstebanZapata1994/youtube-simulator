@@ -2,9 +2,7 @@ import React from 'react';
 
 const Header = () => {
 
-    // document.querySelector('#boton-menu').addEventListener('click', () => {
-
-    // });
+    
     return ( 
         <header className="header">
             <div className="contenedor-logo">
