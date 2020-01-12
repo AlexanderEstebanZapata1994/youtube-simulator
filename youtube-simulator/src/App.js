@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
 import './App.css';
+import "./components/page-style.css";
+
+import Header from "./components/Header"
+import MenuLateral from "./components/menu-lateral"
 
 function App() {
+  
+  //Programos el menu para mostrar u ocultar parte de la barra lateral
+  // const contenedor = document.querySelector('#contenedorPrincipal');
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <body>
+        <div className="contenedor active" id="contenedorPrincipal">
+          
+          <Header></Header>
+          <MenuLateral></MenuLateral>
+          <main className="main">
+            Main content
+          </main>
+        </div>
+      </body>
+    </Fragment>
   );
 }
-
 export default App;
